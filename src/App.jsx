@@ -7,7 +7,7 @@ import PageCart from "./components/pages/PageCart"
 function App() {
 
   return <>
-    <Router >
+    <Router>
         <Header/>
           <Routes>
             <Route path="/" element={<PageLanding/>}/>
