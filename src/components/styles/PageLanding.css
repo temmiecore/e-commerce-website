@@ -1,0 +1,70 @@
+.landing-page {
+    display: flex;
+    gap: 64px;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.landing-textarea {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0.9;
+    gap: 32px;
+    align-items: start;
+    margin-top: 180px;
+    margin-left: 64px;
+    max-width: 700px;
+}
+
+.landing-imagearea {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    aspect-ratio: 4 / 6;
+    width: auto;
+}
+
+.landing-image {
+    background-image: url('../../assets/landingimg1.jpg');
+    background-size: cover;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.landing-image.animated {
+    background-image: url('../../assets/landingimg2.jpg');
+    animation: revealImage 6s alternate infinite;
+}
+
+@keyframes revealImage {
+    0%, 40% {
+        clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    }
+    60%, 100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .landing-page {
+        flex-direction: column;
+    }
+
+    .landing-textarea {
+        background-color: white;
+        padding: 32px;
+        margin: 128px 0 0 0;
+        z-index: 3;
+        max-width: none;
+    }
+
+    .landing-imagearea {
+        position: absolute;
+        width: 100%;
+    }
+
+    .landing-textarea button {
+        align-self: center;
+    }
+}

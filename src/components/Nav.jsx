@@ -6,10 +6,10 @@ import cart from "../assets/market.png";
 import user from "../assets/user.png";
 
 function Nav() {
-    const [isPhone, setPhone] = useState(window.innerWidth < 428);
+    const [isPhone, setPhone] = useState(window.innerWidth < 480);
 
     const updateMedia = () => {
-        setPhone(window.innerWidth < 428);
+        setPhone(window.innerWidth < 480);
     };
   
     useEffect(() => {

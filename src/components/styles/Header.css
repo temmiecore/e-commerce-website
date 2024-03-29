@@ -1,9 +1,11 @@
 header {
-    padding: 16px 32px;
+    padding: 0 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #cecece
+    border: 1px solid #cecece;
+    height: 72px;
+    z-index: 100;
 }
 
 nav {
@@ -20,8 +22,8 @@ header .cart {
     width: 28px;
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 480px) {
     header {
-        padding: 16px;
+        padding: 0 16px;
     }
 }

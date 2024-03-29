@@ -2,3 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+html, body, #root {
+  height: 100%;
+}
+
+main {
+  height: calc(100% - 74px);
+  display: flex;
+}

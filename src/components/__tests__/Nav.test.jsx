@@ -11,9 +11,9 @@ beforeEach(() => {
 
 // test routing here or higher?
 describe('Nav', () => {
-    it('should render images at width lower than 428px', () => {
+    it('should render images at width lower than 480px', () => {
         act(() => {
-            window.innerWidth = 427;
+            window.innerWidth = 479;
             window.dispatchEvent(new Event("resize"));
         });
 
@@ -24,9 +24,9 @@ describe('Nav', () => {
         expect(headingElements).toHaveLength(0);
 
     });
-    it('should render headings at width higher than 428', () => {
+    it('should render headings at width higher than 480px', () => {
         act(() => {
-            window.innerWidth = 429;
+            window.innerWidth = 481;
             window.dispatchEvent(new Event("resize"));
         });
 
