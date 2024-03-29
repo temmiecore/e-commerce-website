@@ -11,7 +11,7 @@ function App() {
         <Header/>
           <Routes>
             <Route path="/" element={<PageLanding/>}/>
-            <Route path="/main" element={<PageMain/>}/>
+            <Route path="/home" element={<PageMain/>}/>
             <Route path="/cart" element={<PageCart/>}/>
           </Routes>
     </Router>

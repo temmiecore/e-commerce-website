@@ -18,17 +18,17 @@ function Nav() {
     });
 
     return <nav>
-        <Link to="main">
+        <Link to="home" id="home-link">
             { isPhone ? <img src={home} alt="Home" />
                 : <h4 className="body-text">Home</h4>
             }
         </Link>
-        <Link to="account">
+        <Link to="account" id="account-link">
             { isPhone ? <img src={user} alt="Account" />
                 : <h4 className="body-text">Account</h4>
             }
         </Link>
-        <Link to="cart">
+        <Link to="cart" id="cart-link">
             { isPhone ? <img className="cart" src={cart} alt="Cart" />
                 : <h4 className="body-text">Cart</h4>
             }
