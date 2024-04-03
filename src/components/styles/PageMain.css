@@ -1,0 +1,23 @@
+.main-page {
+    width: 100%;
+}
+
+.main-opening-imagearea {
+    position: relative;
+    background-image: url("../../assets/mainopeningimg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 16px;
+    padding-bottom: 320px;
+}
+
+.main-opening-imagearea > .scrolling-container {
+    background-color: white;
+    margin-bottom: 32px;
+}
+
+.main-opening-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

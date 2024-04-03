@@ -48,11 +48,13 @@ small {
     font-size: 0.833rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 810px) {
     h1.big {
         font-size: 2.488rem;
-    }
+    } 
+}
 
+@media screen and (max-width: 480px) {
     h1 {
         font-size: 1.728rem;
     }

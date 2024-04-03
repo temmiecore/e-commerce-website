@@ -6,13 +6,13 @@ function ScrollingText({ children, speed }) {
         <h1 className="heading-text big scrolling-text">
             {children}
         </h1>
-        <h1 className="heading-text big scrolling-text">
+        <h1 className="heading-text big scrolling-text" aria-hidden="true">
             {children}
         </h1>
-        <h1 className="heading-text big scrolling-text">
+        <h1 className="heading-text big scrolling-text" aria-hidden="true">
             {children}
         </h1>
-        <h1 className="heading-text big scrolling-text">
+        <h1 className="heading-text big scrolling-text" aria-hidden="true">
             {children}
         </h1>
     </div>
@@ -20,7 +20,7 @@ function ScrollingText({ children, speed }) {
 
 ScrollingText.propTypes = {
     children: PropTypes.string.isRequired,
-    speed: PropTypes.string.isRequired,
+    speed: PropTypes.string,
 };
 
 export default ScrollingText;

@@ -64,7 +64,7 @@
         width: 100%;
     }
 
-    .landing-textarea button {
+    .landing-textarea > a {
         align-self: center;
     }
 }
