@@ -1,0 +1,50 @@
+.scrolling-container {
+    border-radius: 5px;
+    overflow: hidden;
+    width: max-content;
+    display: flex;
+    animation-name: scrolling;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scrolling-container.slow {
+    animation-duration: 10s;
+}
+
+.scrolling-container.fast {
+    animation-duration: 5s;
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    margin-right: 2rem;
+}
+
+/* for Firefox */
+@-moz-keyframes scrolling {
+    from {
+        -moz-transform: translateX(0);
+    }
+
+    to {
+        -moz-transform: translateX(-25%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes scrolling {
+    from {
+        -webkit-transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(-25%);
+    }
+}
+
+@keyframes scrolling {
+    from {transform: translateX(0)}
+    100% {transform: translateX(-25%)}
+} 
