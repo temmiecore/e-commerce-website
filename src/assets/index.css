@@ -10,4 +10,5 @@ html, body, #root {
 main {
   height: calc(100% - 74px);
   display: flex;
+  overflow-x: hidden;
 }

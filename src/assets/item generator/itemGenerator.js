@@ -83,7 +83,7 @@ function getItemPrice() {
 function getItemImage() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        const itemImage = "./clothing images/clothimage" + (Math.floor(Math.random() * 5) + 1) + ".jpg";
+        const itemImage = "src/assets/item generator/clothing images/clothimage" + (Math.floor(Math.random() * 5) + 1) + ".jpg";
         resolve(itemImage);
       }, Math.floor(Math.random() * 600));
     });

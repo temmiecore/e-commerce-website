@@ -1,0 +1,41 @@
+.main-grid {
+    margin: 32px auto 32px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 20px;
+    max-width: 1550px;
+}
+
+.main-grid-item {
+    border: 3px solid black;
+    padding: 16px;
+}
+
+.grid-item-imagearea {
+    margin-bottom: 8px;
+}
+
+.grid-item-imagearea img {
+    max-width: 100%;
+}
+
+.grid-item-textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item-textarea button {
+    padding: 0;
+    font-size: 1.2rem;
+    border: none;
+    align-self: flex-end;
+}
+
+.grid-item-textarea button:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen {
+    
+}

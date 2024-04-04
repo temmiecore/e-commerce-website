@@ -1,4 +1,6 @@
 import ScrollingText from "../ScrollingText";
+import MainGrid from "../main grid/MainGrid";
+
 import "../styles/PageMain.css"
 
 function PageMain() {
@@ -11,9 +13,7 @@ function PageMain() {
                 buy 3 shirts, get one shoe for free.
             </ScrollingText>
         </div>
-        <div className="main-grid">
-
-        </div>
+        <MainGrid />
     </div>
 }
 
