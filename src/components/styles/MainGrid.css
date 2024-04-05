@@ -1,5 +1,9 @@
+.main-grid-parent {
+    padding: 32px;
+}
+
 .main-grid {
-    margin: 32px auto 32px auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 20px;
@@ -34,8 +38,4 @@
 .grid-item-textarea button:hover {
     color: black;
     background-color: white;
-}
-
-@media screen {
-    
 }
