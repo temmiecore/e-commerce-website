@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import CartGrid from "../cart grid/CartGrid";
 
 import "../styles/PageCart.css"
-import Button from "../Button";
 import Checkout from "../Checkout";
 
 function PageCart({
