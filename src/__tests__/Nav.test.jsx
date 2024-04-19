@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react'
-import Nav from "../Nav";
-import { MemoryRouter } from 'react-router-dom';
-import { act } from 'react-dom/test-utils';
-import { beforeEach, expect } from 'vitest';
+import { render, screen } from "@testing-library/react"
+import Nav from "../components/Nav";
+import { MemoryRouter } from "react-router-dom";
+import { act } from "react-dom/test-utils";
+import { beforeEach, expect } from "vitest";
 
 beforeEach(() => {
     render(<MemoryRouter><Nav/></MemoryRouter>);
@@ -10,8 +10,8 @@ beforeEach(() => {
 });
 
 // test routing here or higher?
-describe('Nav', () => {
-    it('should render images at width lower than 480px', () => {
+describe("Nav", () => {
+    it("should render images at width lower than 480px", () => {
         act(() => {
             window.innerWidth = 479;
             window.dispatchEvent(new Event("resize"));
@@ -24,7 +24,7 @@ describe('Nav', () => {
         expect(headingElements).toHaveLength(0);
 
     });
-    it('should render headings at width higher than 480px', () => {
+    it("should render headings at width higher than 480px", () => {
         act(() => {
             window.innerWidth = 481;
             window.dispatchEvent(new Event("resize"));

@@ -1,8 +1,8 @@
 import { expect, it } from "vitest";
-import { getItemName, getItemPrice, getItemImage, getItem } from "./itemGenerator"
+import { getItemName, getItemPrice, getItemImage, getItem } from "../assets/item generator/itemGenerator"
 
-describe('getItem functions', () => {
-    it('should return string for Name/Image and number for Price', async () => {
+describe("getItem functions", () => {
+    it("should return string for Name/Image and number for Price", async () => {
         const itemName = await getItemName();
         expect(typeof itemName).toBe("string");
 
@@ -14,12 +14,12 @@ describe('getItem functions', () => {
     });
 });
 
-describe('getItem', () => {
-    it('should handle async correctly', async () => {
+describe("getItem", () => {
+    it("should handle async correctly", async () => {
         const data = await getItem();
         expect(data).toBeDefined();
     });
-    it('should return array of three items', async () => {
+    it("should return array of three items", async () => {
         const data = await getItem();
         expect(Array.isArray(data)).toBe(true);
         expect(data.length).toBe(3);
