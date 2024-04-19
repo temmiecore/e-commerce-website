@@ -27,13 +27,13 @@
 }
 
 .landing-image {
-    background-image: url('../../assets/landingimg1.jpg');
+    background-image: url("../../assets/landingimg1.jpg");
     background-size: cover;
     grid-area: 1 / 1 / 2 / 2;
 }
 
 .landing-image.animated {
-    background-image: url('../../assets/landingimg2.jpg');
+    background-image: url("../../assets/landingimg2.jpg");
     animation: revealImage 6s alternate infinite;
 }
 

@@ -1,0 +1,23 @@
+.cart-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-grid-item {
+    padding: 8px;
+    display: flex;
+    border: 3px solid black
+}
+
+.cart-grid-item img {
+    max-width: 200px;
+}
+
+.cart-grid-item-textarea {
+    width: 100%;
+}
+
+.cart-grid-item-textarea > div {
+    display: flex;
+    justify-content: space-between;
+}

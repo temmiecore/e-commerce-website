@@ -1,5 +1,5 @@
 import Button from "../Button"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 function MainGridItem({
     name,
@@ -8,10 +8,10 @@ function MainGridItem({
     handleAddItemToCart
 }) {
     return <div className="main-grid-item">
-        <div className="grid-item-imagearea">
+        <div className="main-grid-item-imagearea">
             <img src={image} alt={name}/>
         </div>
-        <div className="grid-item-textarea">
+        <div className="main-grid-item-textarea">
             <h3 className="body-text">{name}</h3>
             <h4 className="body-text">${price}</h4>
             <Button onClick={handleAddItemToCart}>+ Add to cart</Button>
