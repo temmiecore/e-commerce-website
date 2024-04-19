@@ -5,15 +5,14 @@ import "../styles/CartGrid.css"
 
 function CartGrid({
     cartItems,
+    handleQuantityChange,
 }) {
     return <div className="cart-grid">
         {cartItems.map(item => (
             <CartGridItem
                 key={item.id}
-                name={item.name}
-                price={item.price}
-                image={item.image}
-                qty={item.qty}
+                item={item}
+                handleQuantityChange={handleQuantityChange}
             />
         ))}
     </div>
@@ -21,6 +20,7 @@ function CartGrid({
 
 CartGrid.propTypes = {
     cartItems: PropTypes.array.isRequired,
+    handleQuantityChange: PropTypes.func.isRequired,
 }
 
 

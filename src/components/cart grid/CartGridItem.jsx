@@ -1,29 +1,32 @@
 import PropTypes from "prop-types";
+import Button from "../Button";
 
 function CartGridItem({
-    name,
-    price,
-    image,
-    qty,
+    item,
+    handleQuantityChange,
 }) {
     return <div className="cart-grid-item">
-        <img src={image} alt={name} />
+        <img src={item.image} alt={item.name} />
         <div className="cart-grid-item-textarea">
-            <div>
-                <h4 className="body-text">{name}</h4>
-                <h4 className="body-text">${price}</h4>
+            <div className="cart-grid-item-nameprice">
+                <div>
+                    <h4 className="body-text">{item.name}</h4>
+                    <h5 className="body-text">in stock</h5>
+                </div>
+                <h4 className="body-text">${item.price}</h4>
             </div>
-            <h5 className="body-text">in stock</h5>
-            <h4 className="body-text">Qty: {qty}</h4>
+            <div className="cart-grid-item-qty">
+                <h4 className="body-text">Qty: {item.qty}</h4>
+                <Button onClick={() => handleQuantityChange(item, true)}>+</Button>
+                <Button onClick={() => handleQuantityChange(item, false)}>-</Button>
+            </div>
         </div>
     </div>
 }
 
 CartGridItem.propTypes = {
-    name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    image: PropTypes.string.isRequired,
-    qty: PropTypes.number.isRequired,
+    item: PropTypes.object.isRequired,
+    handleQuantityChange: PropTypes.func.isRequired,
 }
 
 export default CartGridItem;
