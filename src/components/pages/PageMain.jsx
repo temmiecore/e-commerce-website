@@ -1,5 +1,5 @@
 import ScrollingText from "../ScrollingText";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 import MainGrid from "../main grid/MainGrid";
 
 import "../styles/PageMain.css"
