@@ -1,5 +1,5 @@
-import PropTypes from "prop-types"
-import "./styles/Button.css"
+import PropTypes from "prop-types";
+import "./styles/Button.css";
 
 function Button({
     children,

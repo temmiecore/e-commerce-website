@@ -1,5 +1,5 @@
-import PropTypes from "prop-types"
-import "./styles/ScrollingText.css"
+import PropTypes from "prop-types";
+import "./styles/ScrollingText.css";
 
 function ScrollingText({ children, speed }) {
     return <div className={"scrolling-container " + speed}>

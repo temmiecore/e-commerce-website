@@ -61,7 +61,9 @@ function App() {
                 <Header />
                 <main>
                     <Routes>
-                        <Route path="/" element={<PageLanding />} />
+                        <Route path="/" 
+                            element={<PageLanding />} 
+                        />
                         <Route
                             path="/home"
                             element={<PageMain handleAddItemToCart={handleAddItemToCart} />}

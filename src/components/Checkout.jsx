@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "./Button";
 import PropTypes from "prop-types";
 
-import "./styles/Checkout.css"
+import "./styles/Checkout.css";
 
 function Checkout({
     cartItems,

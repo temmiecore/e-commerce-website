@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import CartGridItem from "./CartGridItem";
 
-import "../styles/CartGrid.css"
+import "../styles/CartGrid.css";
 
 function CartGrid({
     cartItems,
