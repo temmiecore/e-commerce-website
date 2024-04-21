@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import PageLanding from "./components/pages/PageLanding";
 import PageMain from "./components/pages/PageMain";
@@ -27,7 +27,6 @@ function App() {
                 updatedItems[index].qty++;
                 return updatedItems;
             });
-
     };
 
     const handleQuantityChange = (item, isIncrement) => {
@@ -57,7 +56,7 @@ function App() {
 
     return (
         <>
-            <Router>
+            <BrowserRouter>
                 <Header />
                 <main>
                     <Routes>
@@ -80,9 +79,10 @@ function App() {
                         />
                     </Routes>
                 </main>
-            </Router>
+            </BrowserRouter>
         </>
     );
+
 }
 
 export default App;

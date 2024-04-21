@@ -21,7 +21,7 @@ describe('Checkout', () => {
         expect(screen.getByText("Total: $535")).toBeInTheDocument();
 
         screen.debug();
-    })
+    });
 
     it('should call handleCheckout on button click', async () => {
         const handleCheckoutMock = vi.fn();
@@ -32,5 +32,5 @@ describe('Checkout', () => {
         await user.click(screen.getByText("Checkout now"));
 
         expect(handleCheckoutMock).toHaveBeenCalledOnce();
-    })
+    });
 })

@@ -7,7 +7,6 @@ import { expect } from "vitest";
 describe("Nav", () => {
     it("should render images at width lower than 480px", () => {
         render(<MemoryRouter><Nav/></MemoryRouter>);
-        screen.debug();
 
         act(() => {
             window.innerWidth = 479;
@@ -20,7 +19,10 @@ describe("Nav", () => {
         const headingElements = screen.queryAllByRole("heading");
         expect(headingElements).toHaveLength(0);
 
+
+        screen.debug();
     });
+    
     it("should render headings at width higher than 480px", () => {
         render(<MemoryRouter><Nav/></MemoryRouter>);
     
