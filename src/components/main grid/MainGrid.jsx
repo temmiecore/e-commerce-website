@@ -35,10 +35,8 @@ function MainGrid({
             {gridItems.map(item => (
                 <MainGridItem
                     key={item.id}
-                    name={item.name}
-                    price={item.price}
-                    image={item.image}
-                    handleAddItemToCart={() => handleAddItemToCart(item)} />
+                    item={item}
+                    handleAddItemToCart={handleAddItemToCart} />
             ))}
         </div>
     </div>
