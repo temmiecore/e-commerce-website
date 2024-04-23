@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import PropTypes from "prop-types";
 import React from "react";
 import MainGridItem from "./MainGridItem";
+import Button from "../Button";
 
 import "../styles/MainGrid.css";
 
@@ -39,6 +40,7 @@ function MainGrid({
                     handleAddItemToCart={handleAddItemToCart} />
             ))}
         </div>
+        <Button onClick={() => getItems(10)}>Load more</Button>
     </div>
 }
 
