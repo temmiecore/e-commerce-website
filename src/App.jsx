@@ -4,6 +4,7 @@ import PageLanding from "./components/pages/PageLanding";
 import PageMain from "./components/pages/PageMain";
 import PageCart from "./components/pages/PageCart";
 import React from "react";
+import ErrorPage from "./components/pages/ErrorPage";
 
 function App() {
     const [cartItems, setCartItems] = React.useState([]);
@@ -60,7 +61,8 @@ function App() {
                 <Header />
                 <main>
                     <Routes>
-                        <Route path="/" 
+                        <Route 
+                            path="/" 
                             element={<PageLanding />} 
                         />
                         <Route
@@ -76,6 +78,10 @@ function App() {
                                     handleCheckout={handleCheckout}
                                 />
                             }
+                        />
+                        <Route
+                            path="*"
+                            element={<ErrorPage />}
                         />
                     </Routes>
                 </main>
