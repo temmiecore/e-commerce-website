@@ -33,4 +33,4 @@ describe('Checkout', () => {
 
         expect(handleCheckoutMock).toHaveBeenCalledOnce();
     });
-})
+});

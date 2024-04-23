@@ -37,4 +37,4 @@ describe("Nav", () => {
         const headingElements = screen.queryAllByRole("heading");
         expect(headingElements.length > 0).toBeTruthy();
     });
-})
+});

@@ -64,7 +64,7 @@ function getItemName() {
     setTimeout(() => {
       const itemName = 
       itemAdjectives[Math.floor(Math.random() * itemAdjectives.length)] + " " +
-      itemNames[Math.floor(Math.random() * itemNames.length)] + " | " +
+      itemNames[Math.floor(Math.random() * itemNames.length)] + ", " +
       itemColors[Math.floor(Math.random() * itemColors.length)];
       resolve(itemName);
     }, Math.floor(Math.random() * 300));

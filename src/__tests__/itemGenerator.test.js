@@ -24,4 +24,4 @@ describe("getItem", () => {
         expect(Array.isArray(data)).toBe(true);
         expect(data.length).toBe(3);
     });
-})
+});
