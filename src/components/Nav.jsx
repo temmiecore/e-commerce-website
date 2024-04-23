@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import React from "react";
 
 import home from "../assets/home.png";
 import cart from "../assets/market.png";
 import user from "../assets/user.png";
 
 function Nav() {
-    const [isPhone, setPhone] = useState(window.innerWidth < 480);
+    const [isPhone, setPhone] = React.useState(window.innerWidth < 480);
 
     const updateMedia = () => {
         setPhone(window.innerWidth < 480);
     };
   
-    useEffect(() => {
+    React.useEffect(() => {
       window.addEventListener("resize", updateMedia);
       return () => window.removeEventListener("resize", updateMedia);
     });

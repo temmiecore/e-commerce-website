@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React from "react";
 import Button from "./Button";
 import PropTypes from "prop-types";
 
@@ -8,7 +8,7 @@ function Checkout({
     cartItems,
     handleCheckout,
 }) {
-    const [prices, setPrices] = useState([0,0,0,0]);
+    const [prices, setPrices] = React.useState([0,0,0,0]);
 
     const calculatePrice = () => {
         let subtotal = 0;
@@ -21,7 +21,7 @@ function Checkout({
         setPrices([subtotal, fees, tax, total])
     }
 
-    useEffect(() => {
+    React.useEffect(() => {
         calculatePrice();
     }, [cartItems]);
 

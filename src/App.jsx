@@ -3,10 +3,10 @@ import Header from "./components/Header";
 import PageLanding from "./components/pages/PageLanding";
 import PageMain from "./components/pages/PageMain";
 import PageCart from "./components/pages/PageCart";
-import { useState } from "react";
+import React from "react";
 
 function App() {
-    const [cartItems, setCartItems] = useState([]);
+    const [cartItems, setCartItems] = React.useState([]);
 
     const handleAddItemToCart = (item) => {
         const index = cartItems.findIndex((toFind) => toFind.id == item.id);

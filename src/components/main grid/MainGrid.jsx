@@ -1,8 +1,7 @@
 import { getItem } from "../../assets/item generator/itemGenerator";
 import { v4 as uuidv4 } from "uuid";
-import { useEffect } from "react";
 import PropTypes from "prop-types";
-import { useState } from "react";
+import React from "react";
 import MainGridItem from "./MainGridItem";
 
 import "../styles/MainGrid.css";
@@ -10,7 +9,7 @@ import "../styles/MainGrid.css";
 function MainGrid({
     handleAddItemToCart
 }) {
-    const [gridItems, setGridItems] = useState([]);
+    const [gridItems, setGridItems] = React.useState([]);
 
     const getItems = async (count = 10) => {
         for (let i = 0; i < count; i++) {
@@ -27,7 +26,7 @@ function MainGrid({
         }
     }
 
-    useEffect(() => {
+    React.useEffect(() => {
         getItems();
     }, []);
 
