@@ -16,9 +16,9 @@ function CartGridItem({
                 <h4 className="body-text">${item.price}</h4>
             </div>
             <div className="cart-grid-item-qty">
-                <h4 className="body-text">Qty: {item.qty}</h4>
-                <Button onClick={() => handleQuantityChange(item, true)}>+</Button>
-                <Button onClick={() => handleQuantityChange(item, false)}>-</Button>
+                <h4 className="body-text">Quantity: {item.qty}</h4>
+                <Button onClick={() => handleQuantityChange(item, true)} ariaLabel={"Add 1 " + item.name + " to cart"}>+</Button>
+                <Button onClick={() => handleQuantityChange(item, false)} ariaLabel={"Remove 1 " + item.name + " to cart"}>-</Button>
             </div>
         </div>
     </div>

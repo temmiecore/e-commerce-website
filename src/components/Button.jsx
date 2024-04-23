@@ -3,11 +3,13 @@ import "./styles/Button.css";
 
 function Button({
     children,
-    onClick
+    onClick,
+    ariaLabel,
 }) {
     return <button
         onClick={onClick}
-        className="body-text">
+        className="body-text"
+        aria-label={ariaLabel}>
         {children}
     </button>
 }
