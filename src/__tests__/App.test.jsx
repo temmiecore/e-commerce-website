@@ -38,5 +38,17 @@ describe('App', () => {
 
             expect(screen.getByText("Shopping Cart")).toBeInTheDocument();
         });
+
+        it('should render error page for invalid routes', async () => {
+            const user = userEvent.setup();
+
+            render(
+                <App />
+            );
+
+            await user.click(screen.getByRole("link", { name: "Account" }))
+
+            expect(screen.getByText("404 - Not Found")).toBeInTheDocument();
+        })
     });
 });
