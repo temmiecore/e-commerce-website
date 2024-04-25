@@ -46,3 +46,18 @@
     padding: 0;
     width: 45px;
 }
+
+@media screen and (max-width: 480px) {
+    .cart-grid-item {
+        flex-direction: column;
+    }
+
+    .cart-grid-item img {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .cart-grid-item-nameprice {
+        display: block;
+    }
+}
